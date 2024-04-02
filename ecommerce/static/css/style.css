@@ -1,0 +1,33 @@
+body
+{
+background-color:white;
+font-family: "Graduate", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3
+{
+text-align:center;
+}
+
+.navbar
+{
+position:fixed;
+width:100%;
+background-color:#219C90;
+z-index:1;
+}
+
+#footer
+{
+background-color:#219C90;
+bottom:0;
+width:100%;
+
+}
+.card:hover
+{
+transform:scale(1.05);
+box-shadow:0 0 20px #4be3d4;
+}

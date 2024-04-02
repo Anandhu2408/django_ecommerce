@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}login{% endblock %}
+{% block content %}
+<br>
+<br>
+<br>
+
+
+<center><h1>Login</h1></center>
+<br>
+<br>
+
+<!--<body style="background-image:url('{% static "images/boook.jpg" %}');background-size:cover;">-->
+<center><form method="POST" style="width:500px;">
+    {% csrf_token %}
+
+    <div class="mb-3">
+      <label class="form-label">username</label>
+      <input type="text"  class="form-control" name="u" placeholder="Enter your username here">
+    </div>
+       <div class="mb-3">
+      <label  class="form-label">password</label>
+      <input type="password"  class="form-control" name="p" placeholder="Enter your password">
+    </div>
+    <br>
+    <br>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+    </center>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br><br><br><br><br><br><br><br><br>
+<div class="row">
+    {% for i in s %}
+    <h2> customer name:{{i.user}}</h2>
+
+<div class="col-md-6">
+    <img src="{{i.product.image.url}}" height="400px;"width="100%;">
+</div>
+        <div class="col-md-6">
+            <h1>{{i.product}}</h1>
+            <p>{{i.product.price}}</p>
+            <P>Delivery_address:{{i.address}}</p>
+           <P>Phone Number:{{i.phone}}</p>
+            <P>No_of_items:{{i.no_of_items}}</p>
+            <P>Orderd_On:{{i.ordered_date}}</p>
+            <P>Delivery_Status:{{i.delivery_status}}</p>
+        </div>
+    {% endfor %}
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+{% endblock %}
